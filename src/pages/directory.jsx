@@ -7,14 +7,18 @@ import fetchUsers from "../utils/userapi"
 
 function Table( ){
     const [people, setPeople] = useState([])
+    const[input, setInput]= useState('')
 
     useEffect(() => {
         fetchUsers()
         .then(users=>setPeople(users.results))
        }
     , [])
-    useEffect(()=>console.log(people), [people])
+    useEffect(()=>console.log(input), [input])
 return(
+<div>   
+     <input className="form-control" type="text" placeholder="search by title" value={input} 
+     onChange={e=>setInput(e.target.value)}/>
     <table className="table">
     <thead>
       <tr>
@@ -27,7 +31,7 @@ return(
       </tr>
     </thead>
     <tbody>
-    {people.map(person=> <tr>
+    {people.filter(person=> person.name.title.toLowerCase().startsWith(input.toLowerCase())).map(person=> <tr>
     <th scope="row">{person.name.title}</th>
     <td>{person.name.first}</td>
     <td>{person.name.last}</td>
@@ -36,6 +40,8 @@ return(
     </tr>)}
          </tbody>
   </table>  
+  </div>
+
 )
 }
 export default Table
