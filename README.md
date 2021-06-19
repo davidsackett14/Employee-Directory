@@ -6,6 +6,7 @@
   ## Description
   
   This app submits an api call to [Random User API](https://randomuser.me/) for 20 users. You may filter out the displayed people by title or alphebetize them by first name
+  https://github.com/davidsackett14/Employee-Directory/blob/main/Web%20capture_18-6-2021_21018_davidsackett14.github.io.jpeg
   
   
   ## Table of Contents (Optional)
