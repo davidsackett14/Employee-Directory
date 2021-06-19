@@ -18,7 +18,7 @@
   
   ## Installation
   
-  this program is deployed to github pages and can be ran by clicking here: [link](https://davidsackett14.github.io/Employee-directory/)
+  this program is deployed to github pages and can be ran by clicking here: [Employee-Directory](https://davidsackett14.github.io/Employee-Directory/)
   
   
   ## Usage 
@@ -28,7 +28,7 @@
   
   ## Credits
   
-  This app was created using trilogy education resources and [link](https://create-react-app.dev)
+  This app was created using trilogy education resources and [React docs](https://create-react-app.dev)
   
   
   ## License
